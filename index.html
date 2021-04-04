@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Mega Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- Title -->
+    <title>Survey Form | AJ Kilmurray</title>
+
+</head>
+
+
+
+<body>
+
+    <main>
+
+        <!-- Main Section -->
+
+        <section id="main">
+
+            <div class="container">
+
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Thank you for taking the time to provide feedback on our services.</p>
+
+                <!-- Form -->
+
+                <form id="form">
+
+                    <div class="section1">
+
+                        <label id="email-label" for="name">Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+
+                        <br>
+
+                        <label id="email-label" for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+
+                        <br>
+
+                        <label id="number-label" for="number">Year of Birth <span id="birth-highlight">(optional)</span></label><br>
+                        <input type="number" id="number" name="birth" value="birth" min="1900" max="2021" placeholder="Enter Year of Birth" required>
+
+                        <br>
+                        
+                    </div>
+                    
+                    <!-- Dropdown -->
+
+                    <div class="select">
+
+                        <label for="dropdown">What service did you order?</label>
+                        
+                        <br>
+
+                        <select id="dropdown" name="dropdown">
+
+                            <option disabled selected value>Select an option</option>
+                            <option value="frontEnd">Front End Web Development</option>
+                            <option value="backEnd">Back End Web Development</option>
+                            <option value="graphics">Graphic Design</option>
+                            <option value="writing">Writing</option>
+
+                        </select>
+
+                    </div>
+                
+                    <!-- Radio -->
+
+                    <div class="future">
+
+                        <p class="head">Will you be returning in the future?</p>
+                        <input type="radio" id="yes" name="future" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <br>
+
+                        <input type="radio" id="probably" name="future" value="probably">
+                        <label for="probably">Probably</label>
+                        
+                        <br>
+
+                        <input type="radio" id="no" name="future" value="no">
+                        <label for="no">No</label>
+
+                    </div>
+            
+                    <!-- Checkbox -->
+
+                    <div class=checkbox>
+
+                        <p class="head">Which of the following services would you use again?</p>
+
+                        <input type="checkbox" id="webDevelopment" name="webDevelopment" value="choice_1">
+                        <label for="webDevelopment">Web Development</label>
+
+                        <br>
+
+                        <input type="checkbox" id="webDesign" name="webDesign" value="choice_2">
+                        <label for="webDesign">Web Design</label>
+
+                        <br>
+
+                        <input type="checkbox" id="graphicDesign" name="graphicDesign" value="choice_3">
+                        <label for="graphicDesign">Graphic Design</label>
+
+                    </div>
+
+                    <br>
+
+                    <!-- Textarea -->
+
+                    <div class="message">
+
+                        <textarea id="message" name="message" placeholder="Enter Feedback" resize="none"></textarea>
+
+                    </div>
+
+                    <!-- Submit Button -->
+
+                    <div class="button">
+
+                        <button type="submit" id="button" name="submit" value="submit">Submit</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
